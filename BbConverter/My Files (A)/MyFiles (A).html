@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8" />
+    <title>ملفاتي</title>
+    <link rel="stylesheet" href="fileStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+
+    <div class="header">
+
+        <img src="logo.png" alt="logo" class="logo" />
+        <div class="menu">
+            <a href="Home.html" class="inactive">التحويل</a>
+            <a href="MyFiles (A).html" class="active">ملفاتي</a>
+            <a href="AboutArabic.html" class="inactive">من نحن</a>
+        </div>
+        <div class="side">
+            <a href="" type="button" class="btn">
+                <i class="material-icons" title="English">language</i>
+            </a>
+            <a href="profile.html" class="btn">
+                <i class="material-icons">person</i>
+            </a>
+            <a href="login.html" type="button" class="btn">
+                <i class="material-icons">power_settings_new</i>
+            </a>
+        </div>
+    </div>
+
+
+    <body>
+        <div class="row">
+
+
+            <div class="container">
+                <h1>إرفع ملف جديد</h1>
+                <div class="row_">
+                    <div class="labels">
+                        <label class="cn_label">اسم المادة:</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="course_Name" placeholder="اسم المادة" />
+                    </div>
+                </div>
+                <div class="row_">
+                    <div class="labels">
+                        <label class="des_label">الوصف:</label>
+                    </div>
+                    <div class="inputs">
+                        <textarea class="text" id="description" placeholder="الوصف"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="upload">
+
+
+                    <input type="file" id="actual-btn" accept=".txt" hidden />
+                    <label for="actual-btn" class="icon_bar">
+                        <img src="upload.png" onmouseover="this.src='upload1.png'"
+                             onmouseout="this.src='upload.png'" title="إستعرض الملفات" class="ico" />
+                    </label>
+                    <div class="up_file"><p id="file-chosen">لم يتم إختيار الملف</p></div>
+
+
+                </div>
+
+            </div>
+
+            <input type="submit" id="Save_Button" value="رفع" class="btn_up" />
+
+
+
+            <script>
+                const actualBtn = document.getElementById('actual-btn');
+
+                const fileChosen = document.getElementById('file-chosen');
+
+                actualBtn.addEventListener('change', function () {
+                    fileChosen.textContent = this.files[0].name
+                })
+            </script>
+
+        </div>
+    </body>
+
+
+    <div class="footer">
+        <div class="contactAr">
+            <span>تواصل معنا:<a href="mailto:ddl-bbsupport@kau.edu.sa" class="email"> ddl-bbsupport@kau.edu.sa</a></span>
+        </div>
+        <div class="dsAr">
+            <span>2022</span>
+            <span>©</span>
+            <span> عمادة التعليم الالكتروني والتعليم عن بعد</span>
+
+        </div>
+    </div>
+</html>

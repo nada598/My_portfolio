@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>صفحة التحويل  </title>
+    <link rel="stylesheet" href="ConStyle.css">
+    <script src="JS.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<!-------------------------------------HEADER------------------------------------------->
+<div class="header">
+
+    <img src="logo.png" title="محول اختبارات بلاكبورد" alt="logo" class="logo" />
+
+    <div class="menu">
+
+        <a href="#" class="active">التحويل</a>
+        <a href="Files.html" class="inactive" title="صفحة الملفات">الملفات </a>
+        <a href="About.html" class="inactive" title="من نحن">من نحن </a>
+
+    </div>
+
+    <div class="side">
+        <a href="Converter.html" type="button" class="btn">
+            <i class="material-icons" title="English">language</i>
+        </a>
+
+        <a href="profile.html" class="btn">
+            <i class="material-icons" title="الذهاب للصفحة الشخصية">person</i>
+        </a>
+
+        <a href="#" type="button" class="btn" onclick="logout();" >
+            <i class="material-icons" title="تسجيل الخروج">power_settings_new</i>
+        </a>
+
+    </div>
+</div>
+<!-------------------------BODY ROW-------------------------------------------------------->
+
+<div class="row">
+
+    <!---------------TITLES--------------->
+    <div class="title_a">
+        <p>ابدأ بتحويل اسئلة اختبارك</p>
+    </div>
+    <div class="ins_a">
+        <img src="polygon_2.png" id="polygon_2" />
+        <span>اتبع تعليمات كتابة الاسئلة ، انظر للتعليمات والأمثلة  <a href="#guide">هنا</a></span>
+    </div>
+    <!----------------BTNS-------------->
+    <div class="btng">
+        <button class="btn_" id="btn_check" onclick="showExport_a();">فحص</button>
+        <button class="btn_" id="btn_Export" onclick="Export_a();"> تصدير</button>
+
+    </div>
+    <!--------------TXT AREA---------------->
+    <form class="input">
+        <textarea class="area" type="text" id="textArea" placeholder="أكتب الأسئلة هنا، أو ألصقها من أي محرر نصوص "></textarea>
+    </form>
+
+
+    <!--------------Warning---------------->
+    <div class="war" id="warning_a">
+
+    </div>
+    <!--------------RESULT---------------->
+    <div class="rr">
+        <div class="check_txt">
+            <br>
+            <p class="result" id="check_result">ستظهر نتيجة فحص النص هنا</p>
+        </div>
+    </div>
+
+    <!---------------GUIDE--------------->
+    <div class="guide_a" id="guide">:التعليمات 
+        <a href="#">انظر إلى نموذج الأمثلة والوصف </a>
+    </div>
+    
+    <!--<div class="p2_a" id="p2">
+        <ul>
+            <li>SR^ - Short Answer</li>
+            <li>NUM^ - Numeric Response</li>
+            <li>FIB^ - Fill in the Blank</li>
+            <li>FIL^ - File Response</li>
+            <li>ORD^ - Ordering</li>
+            <li>MAT^ - Matching Question</li>
+
+
+        </ul>
+    </div>
+
+
+    <div class="p3_a" id="p3">
+        <ul>
+            <li>MC^ - Multiple Choice</li>
+            <li>MA^ - Multiple Answer</li>
+            <li>ESS^ - Essay</li>
+            <li>TF^ - True / False</li>
+            <li>OP^ - Opinion Scale / Likert</li>
+
+
+        </ul>
+    </div>-->
+
+    <div class="insImg">
+
+        <img src="ins.png" />
+        <img src="ins2.png" />
+    </div>
+
+</div>
+<!-------------------------------------FOOTER---------------------------------------->
+<div class="footer">
+
+    <div class="contact">
+        <span>Contact us:<a href="mailto:ddl-bbsupport@kau.edu.sa" class="تواصل معنا:" title="Go To Mail"> ddl-bbsupport@kau.edu.sa</a></span>
+    </div>
+
+    <div class="ds">
+        <span>2022</span>
+        <span>©</span>
+        <span> عمادة التعليم الالكتروني والتعليم عن بعد</span>
+
+
+    </div>
+
+</div>
+</html>
